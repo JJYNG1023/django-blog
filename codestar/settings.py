@@ -89,8 +89,10 @@ WSGI_APPLICATION = "codestar.wsgi.application"
 # https://docs.djangoproject.com/en/6.0/ref/settings/#auth-password-validators
 
 DATABASES = {
-    "default": 
-    dj_database_url.parse(os.environ.get("DATABASE_URL"))}
+    "default": dj_database_url.parse(
+        os.environ.get("DATABASE_URL", f"sqlite:///{BASE_DIR / 'db.sqlite3'}")
+    )
+}
 
 AUTH_PASSWORD_VALIDATORS = [
     {
