@@ -19,6 +19,7 @@ decorator==5.2.1
 defusedxml==0.7.1
 dj-database-url==0.5.0
 Django==4.2.30
+django-summernote==0.8.20.0
 executing==2.2.1
 fastjsonschema==2.21.2
 fqdn==1.5.1
@@ -102,3 +103,4 @@ wcwidth==0.6.0
 webcolors==25.10.0
 webencodings==0.5.1
 websocket-client==1.9.0
+whitenoise==5.3.0
