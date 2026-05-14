@@ -7,8 +7,8 @@ def about_me(request):
     Display the about page content.
 
     """
-    about = About.objects.order_by("-updated_on").first()
-    
+    about = About.objects.all().order_by("-updated_on").first()
+
     return render(
         request,
         "about/about.html",
