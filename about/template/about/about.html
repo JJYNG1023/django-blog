@@ -9,14 +9,15 @@
         </div>
         <div class="col-8">
             <!-- Title goes between these h2 tags -->
-            <h2></h2>
+            <h2> {{about.title}}</h2>
+            <p> {{about.content}} </p>
             <!-- Content goes directly underneath this -->
         </div>
     </div>
     <div class="row">
         <div class="col text-right">
             <!-- Updated on field goes in here -->
-            <p class="text-end"><em>Updated on: </em></p>
+            <p class="text-end"><em>Updated on: {{about.updated_on|date:"d m y"}}</em></p>
         </div>
       </div>
 </div>
